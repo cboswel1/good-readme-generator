@@ -38,9 +38,9 @@ function promptUser() {
       name: "license",
       choices: [
         "MIT", 
-        "CSS", 
-        "JavaScript", 
-        "MySQL"
+        "Mozilla Public License 2.0", 
+        "Boost Software License 1.0", 
+        "The Unlicense"
       ]
     },
     {
