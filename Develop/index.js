@@ -1,5 +1,12 @@
-// array of questions for user
-const questions = [
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
+const generate = require('./generateMarkdown');
+
+const writeReadFile = util.promisify(fs.writeFile);
+
+function promptUser() {
+  return inquirer.prompt([
     {
       type: "input",
       message: "What is the title of your project?",
@@ -7,7 +14,7 @@ const questions = [
     },
     {
       type: "input",
-      message: "Description of your project:",
+      message: "Project description:",
       name: "description"
     },
     {
@@ -26,9 +33,15 @@ const questions = [
       name: "usage"
     }, 
     {
-      type: "input",
+      type: "checkbox",
       message: "License: ",
-      name: "license"
+      name: "license",
+      choices: [
+        "MIT", 
+        "CSS", 
+        "JavaScript", 
+        "MySQL"
+      ]
     },
     {
       type: "input",
@@ -45,15 +58,31 @@ const questions = [
       message: "Questions: ",
       name: "questions"
     }
-];
+]);
+}
 
-console.log(questions);
+
 // function to write README file
+
 function writeToFile(fileName, data) {
 }
 
+
+
 // function to initialize program
-function init() {
+async function init() {
+  console.log("hi")
+  try {
+    const answer = await promptUser();
+
+    const md = generateMd(answer);
+
+    await writeReadFile("README.md", md);
+
+    console.log("Successfully wrote to README.md");
+  } catch(err) {
+    console.log(err);
+  }
 
 }
 
