@@ -2,30 +2,30 @@
 function generateMarkdown(data, answer) {
   return `
   
-# ${answer.title}
+# ${data.title}
 
-${answer.description}
+${data.description}
 
 ## Table of Contents 
-${answer.contents}
+${data.contents}
 
 ## Installation Instructions 
-${answer.installation}
+${data.installation}
 
 ## Usage Instructions
-${answer.usage}
+${data.usage}
 
 ## License
-[${answer.license}]
+[${data.license}]
 
 ## Contributing
-${answer.contributing}
+${data.contributing}
 
 ## Tests
-${answer.tests}
+${data.tests}
 
 ## Questions
-${answer.questions}
+${data.questions}
     `;
 }
 

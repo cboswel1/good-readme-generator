@@ -1,9 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-const generate = require('./generateMarkdown');
+const generate = require("./utils/generateMarkdown");
+const open = require("open");
 
-const writeReadFile = util.promisify(fs.writeFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser() {
   return inquirer.prompt([
@@ -70,21 +71,30 @@ function writeToFile(fileName, data) {
 
 
 // function to initialize program
-async function init() {
-  console.log("hi")
-  try {
-    const answer = await promptUser();
+let userResponse = {}
+promptUser()
+    .then(function (answer) {
+    userResponse = answer; 
 
-    const md = generateMd(answer);
+    console.log(answer);
+    })
 
-    await writeReadFile("README.md", md);
 
-    console.log("Successfully wrote to README.md");
-  } catch(err) {
-    console.log(err);
-  }
+    .then(function(answer) {
+    
+        const md = generate(userResponse, answer);
+        return writeFileAsync("README.md", md);
 
-}
+    })
 
-// function call to initialize program
-init();
+    .then(function (res) {
+        console.log("working");
+
+        open("README.md"); 
+    })
+
+    .catch(function (err) {
+        console.log(err);
+    });
+
+
