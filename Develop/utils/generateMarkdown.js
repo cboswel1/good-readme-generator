@@ -25,7 +25,8 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-${data.questions}
+
+[${data.user}](https://github.com/${data.user})
     `;
 }
 

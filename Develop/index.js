@@ -56,16 +56,10 @@ function promptUser() {
     },
     {
       type: "input",
-      message: "Questions: ",
-      name: "questions"
+      message: "GitHub username: ",
+      name: "user"
     }
 ]);
-}
-
-
-// function to write README file
-
-function writeToFile(fileName, data) {
 }
 
 
@@ -76,7 +70,7 @@ promptUser()
     .then(function (answer) {
     userResponse = answer; 
 
-    console.log(answer);
+    
     })
 
 
