@@ -27,6 +27,8 @@ ${data.tests}
 ## Questions
 
 [${data.user}](https://github.com/${data.user})
+
+[E-Mail](mailto:${data.email})
     `;
 }
 

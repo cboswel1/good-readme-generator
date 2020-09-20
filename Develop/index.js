@@ -35,7 +35,7 @@ function promptUser() {
     }, 
     {
       type: "checkbox",
-      message: "License: ",
+      message: "License (choose with space bar): ",
       name: "license",
       choices: [
         "MIT", 
@@ -58,6 +58,11 @@ function promptUser() {
       type: "input",
       message: "GitHub username: ",
       name: "user"
+    },
+    {
+    type: "input",
+      message: "E-mail address: ",
+      name: "email"
     }
 ]);
 }
