@@ -1,8 +1,13 @@
+const Choices = require("inquirer/lib/objects/choices");
+
 // function to generate markdown for README
 function generateMarkdown(data, answer) {
   return `
   
-# ${data.title}
+# ${data.title};
+
+[]
+
 
 ${data.description}
 
@@ -21,17 +26,17 @@ ${data.installation}
 ${data.usage}
 
 ## License
-[${data.license}]
+This project is licensed by ${data.license} 
 
 ## Contributing
 ${data.contributing}
 
 ## Tests
 ${data.tests}
-
+ 
 ## Questions
 
-[${data.user}](https://github.com/${data.user})
+[Github profile}](https://github.com/${data.user})
 
 [E-Mail](mailto:${data.email})
     `;
