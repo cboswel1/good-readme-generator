@@ -57,7 +57,7 @@ function promptUser() {
       type: "list",
       message: "License: ",
       name: "license",
-      choices: ["[MIT License](mitlicense.txt)", "[GNU Lesser General Public License v3.0](gnu.txt)", "[Mozilla Public License 2.0](mozilla.txt)", "[The Unlicense](theunlicense.txt)"]
+      choices: ["MIT", "GPL 3.0", "BSD 3"]
     },
     {
       type: "input",
@@ -121,6 +121,7 @@ promptUser()
         return writeFileAsync("README.md", md);
     })
 
+    // User will have README.md also open in their preferred editor 
     .then(function (res) {
         console.log("working");
         open("README.md"); 

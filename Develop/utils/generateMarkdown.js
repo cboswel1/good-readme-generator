@@ -6,7 +6,7 @@ function generateMarkdown(data, answer) {
   
 # ${data.title};
 
-[]
+![](https://img.shields.io/badge/license-${data.license}-yellow)\n
 
 
 ${data.description}
@@ -27,6 +27,7 @@ ${data.usage}
 
 ## License
 This project is licensed by ${data.license} 
+
 
 ## Contributing
 ${data.contributing}
