@@ -25,6 +25,10 @@ You must have node.js installed, and then run index.js in the terminal
 [Node.js](https://nodejs.org/en/)
 
 
+## Live Preview 
+[Preview](https://www.youtube.com/watch?v=cPI60jLUF9s)
+
+
 ## License
 This project is licensed by [MIT](mitlicense.txt)
 
