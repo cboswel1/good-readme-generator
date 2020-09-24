@@ -26,8 +26,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-This project is licensed by ${data.license} 
-
+This project is licensed by [${data.license}](${data.printLicense})
 
 ## Contributing
 ${data.contributing}
@@ -37,7 +36,7 @@ ${data.tests}
  
 ## Questions
 
-[Github profile}](https://github.com/${data.user})
+[Github profile](https://github.com/${data.user})
 
 [E-Mail](mailto:${data.email})
     `;

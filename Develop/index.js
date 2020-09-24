@@ -57,29 +57,23 @@ function promptUser() {
       type: "list",
       message: "License: ",
       name: "license",
-      choices: ["MIT", "GPL 3.0", "BSD 3"]
+      choices: ["MIT License", "GNU v3.0", "MPL 2.0", "The Unlicense"]
+    },
+    {
+      type: "list",
+      message: "License Agreement: ",
+      name: "printLicense",
+      choices: ["mitlicense.txt", "gnu.txt", "mozilla.txt", "theunlicense.txt"]
     },
     {
       type: "input",
       message: "Contributing: ",
       name: "contributing", 
-      validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("No other contributors");
-        }
-        return true;
-        }
     },
     {
       type: "input",
       message: "Tests: ",
       name: "tests", 
-      validate: function (answer) {
-        if (answer.length < 1) {
-            return console.log("n/a");
-        }
-        return true;
-        }
     },
     {
       type: "input",

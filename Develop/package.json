@@ -1,12 +1,12 @@
 {
-  "name": "static-site",
+  "name": "good-readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A command line README generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm"
   },
-  "author": "",
+  "author": "cboswel1",
   "license": "ISC",
   "dependencies": {
     "@octokit/core": "^3.1.2",
