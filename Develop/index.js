@@ -57,7 +57,7 @@ function promptUser() {
       type: "list",
       message: "License: ",
       name: "license",
-      choices: ["MIT License", "GNU v3.0", "MPL 2.0", "The Unlicense"]
+      choices: ["MIT", "GNUv3.0", "MPL2.0", "Unlicense"]
     },
     {
       type: "list",

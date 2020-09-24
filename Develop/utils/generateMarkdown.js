@@ -6,10 +6,11 @@ function generateMarkdown(data, answer) {
   
 # ${data.title};
 
-![](https://img.shields.io/badge/license-${data.license}-yellow)\n
 
+![](https://img.shields.io/badge/license-${(data.license).replace(/\s/g, "%20")}-yellow)\n
 
 ${data.description}
+
 
 ## Table of Contents 
   - [Installation](#installation)
@@ -19,21 +20,27 @@ ${data.description}
   - [Tests](#tests)
   - [Questions](#questions)
 
+
 ## Installation 
 ${data.installation}
+
 
 ## Usage
 ${data.usage}
 
+
 ## License
 This project is licensed by [${data.license}](${data.printLicense})
+
 
 ## Contributing
 ${data.contributing}
 
+
 ## Tests
 ${data.tests}
  
+
 ## Questions
 
 [Github profile](https://github.com/${data.user})

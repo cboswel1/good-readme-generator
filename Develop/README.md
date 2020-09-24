@@ -1,12 +1,13 @@
 
   
-# dsg;
-
-![](https://img.shields.io/badge/license-MIT License-yellow)
+# Good README Generator;
 
 
+![](https://img.shields.io/badge/license-MIT-yellow)
 
-sdfg
+
+cleear
+
 
 ## Table of Contents 
   - [Installation](#installation)
@@ -16,24 +17,30 @@ sdfg
   - [Tests](#tests)
   - [Questions](#questions)
 
+
 ## Installation 
-sdfg
+sDG
+
 
 ## Usage
-sdg
+sdG
+
 
 ## License
-This project is licensed by [MIT License](mitlicense.txt)
+This project is licensed by [MIT](mitlicense.txt)
+
 
 ## Contributing
-sadgf
+s
+
 
 ## Tests
-SFDG
+Sdg
  
+
 ## Questions
 
-[Github profile}](https://github.com/Sdfg)
+[Github profile](https://github.com/sdG)
 
-[E-Mail](mailto:sdG)
+[E-Mail](mailto:Sdg)
     
