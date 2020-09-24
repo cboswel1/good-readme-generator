@@ -24,6 +24,9 @@ You must have node.js installed, and then run index.js in the terminal
 ## Usage
 [Node.js](https://nodejs.org/en/)
 
+## Preview 
+<img src="https://github.com/cboswel1/Recreation-Weather-Planner/blob/master/Assets/HomescreenDemo.png?raw=true" height="256" title="Home Screen">
+
 
 ## Live Preview 
 [Preview](https://www.youtube.com/watch?v=cPI60jLUF9s)
