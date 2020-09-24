@@ -25,7 +25,7 @@ You must have node.js installed, and then run index.js in the terminal
 [Node.js](https://nodejs.org/en/)
 
 ## Preview 
-<img src="https://github.com/cboswel1/Recreation-Weather-Planner/blob/master/Assets/HomescreenDemo.png?raw=true" height="256" title="Home Screen">
+<img src="https://github.com/cboswel1/good-readme-generator/blob/master/Develop/goodreadme.png?raw=true" height="256" title="Home Screen">
 
 
 ## Live Preview 
